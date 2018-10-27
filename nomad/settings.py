@@ -110,27 +110,18 @@ else:
         'default': dj_database_url.config(default=os.environ.get("DATABASE_URL"))
     }
 
-if 'TRAVIS' in os.environ:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'travisci',
-            'USER': 'postgres',
-            'PASSWORD': '',
-            'HOST': 'ec2-107-22-189-136.compute-1.amazonaws.com',
-            'PORT': '5432',
-        }
-    }
-DATABASES = {
-        'default': {
-            'ENGINE': 'postgres://doilegnndybiqu:37b8b34ec878a570eac0f4c58d3b90232890d606efd0d61fb427821f647a9430@ec2-107-22-189-136.compute-1.amazonaws.com:5432/d16j03mj4qpf7u',
-            'NAME': 'd16j03mj4qpf7u',
-            'USER': 'doilegnndybiqu',
-            'PASSWORD': '37b8b34ec878a570eac0f4c58d3b90232890d606efd0d61fb427821f647a9430',
-            'HOST': 'ec2-107-22-189-136.compute-1.amazonaws.com',
-            'PORT': '5432',
-        }
-    }
+# if 'TRAVIS' in os.environ:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'travisci',
+#             'USER': 'postgres',
+#             'PASSWORD': '',
+#             'HOST': 'ec2-107-22-189-136.compute-1.amazonaws.com',
+#             'PORT': '5432',
+#         }
+#     }
+
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
