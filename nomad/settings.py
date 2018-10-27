@@ -127,8 +127,8 @@ DATABASES = {
             'NAME': 'd16j03mj4qpf7u',
             'USER': 'doilegnndybiqu',
             'PASSWORD': '37b8b34ec878a570eac0f4c58d3b90232890d606efd0d61fb427821f647a9430',
-            'HOST': 'localhost',
-            'PORT': '',
+            'HOST': 'ec2-107-22-189-136.compute-1.amazonaws.com',
+            'PORT': '5432',
         }
     }
 # Password validation
