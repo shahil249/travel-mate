@@ -23,7 +23,7 @@ before_script:
 
 script:
   - flake8
-  - python manage.py test
+  - python manage.py runserver  #test
 
 after_success:
   - coveralls
